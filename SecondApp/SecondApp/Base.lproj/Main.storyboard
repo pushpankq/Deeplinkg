@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SecondApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="113"/>
+        </scene>
+        <!--Secret View Controller-->
+        <scene sceneID="Rqk-kb-f9s">
+            <objects>
+                <viewController storyboardIdentifier="SecretVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="owe-dy-QIn" customClass="SecretViewController" customModule="SecondApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hu8-TF-1yh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZj-Yd-rkY">
+                                <rect key="frame" x="26" y="84" width="368" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="153" id="Oko-cI-zCL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ke3-CF-CdD" firstAttribute="trailing" secondItem="CZj-Yd-rkY" secondAttribute="trailing" constant="20" id="539-oa-2uA"/>
+                            <constraint firstItem="CZj-Yd-rkY" firstAttribute="leading" secondItem="Ke3-CF-CdD" secondAttribute="leading" constant="26" id="aAr-H4-z1j"/>
+                            <constraint firstItem="CZj-Yd-rkY" firstAttribute="top" secondItem="Ke3-CF-CdD" secondAttribute="top" constant="40" id="o8V-az-kGP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ke3-CF-CdD"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblText" destination="CZj-Yd-rkY" id="cO8-bh-ze2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uKy-gy-F12" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798.55072463768124" y="-61.607142857142854"/>
+        </scene>
+    </scenes>
+</document>
